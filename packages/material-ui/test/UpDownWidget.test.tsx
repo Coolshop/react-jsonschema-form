@@ -4,7 +4,7 @@ import renderer from "react-test-renderer";
 import { WidgetProps } from "@rjsf/core";
 
 import MuiComponentContext from '../src/MuiComponentContext/MuiComponentContext';
-import { MaterialUIContext } from '../src/Theme/MaterialUIContext';
+import { Mui5Context } from '../src/Theme5/Mui5Context';
 import UpDownWidget from "../src/UpDownWidget/UpDownWidget";
 
 export const mockSchema: JSONSchema7 = {
@@ -44,7 +44,7 @@ test("renders 0 as 0 and not ''", () => {
     }
   };
   const tree = renderer.create((
-    <MuiComponentContext.Provider value={MaterialUIContext}>
+    <MuiComponentContext.Provider value={Mui5Context}>
       <UpDownWidget {...props} />
     </MuiComponentContext.Provider>
   )).toJSON();
