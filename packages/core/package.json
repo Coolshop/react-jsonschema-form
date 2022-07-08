@@ -35,7 +35,7 @@
     "node": ">=12"
   },
   "peerDependencies": {
-    "react": ">=16 || >=17"
+    "react": ">=16 || >=17|| >=18"
   },
   "dependencies": {
     "@types/json-schema": "^7.0.7",
