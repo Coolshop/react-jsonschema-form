@@ -1,7 +1,7 @@
 {
-  "name": "@rjsf/material-ui",
-  "version": "5.0.0",
-  "module": "./dist/material-ui.esm.js",
+  "name": "@coolshop/rjsf-material-ui-beta",
+  "version": "5.0.2",
+  "module": "./dist/rjsf-material-ui-beta.esm.js",
   "main": "./dist/index.js",
   "types": "./dist/index.d.ts",
   "description": "Material UI theme, fields and widgets for react-jsonschema-form",
@@ -10,7 +10,7 @@
   ],
   "scripts": {
     "start": "tsdx watch",
-    "build": "rimraf dist && tsdx build --format cjs,es,umd",
+    "build": "rimraf dist && ../../node_modules/.bin/tsdx build --format cjs,es,umd",
     "test": "tsdx test",
     "test:update": "tsdx test --u"
   },
@@ -72,7 +72,8 @@
     "rollup-plugin-copy": "^3.4.0"
   },
   "publishConfig": {
-    "access": "public"
+    "@coolshop:registry": "https://gitlab.com/api/v4/projects/26205894/packages/npm/",
+    "access": "restricted"
   },
   "author": "Agustin N. R. Ramirez <agustin.ramirez@cybertec.at>",
   "contributors": [
